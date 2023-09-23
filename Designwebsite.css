@@ -1,0 +1,87 @@
+html{
+    height: 100%;
+}
+
+header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:larger;
+    font-weight: bold;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100%;
+    background-color: beige;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    grid-template-rows: min-content min-content auto min-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "navBar navBar navBar"
+      "content1 content2 content3"
+      "footer footer footer";
+  }
+  
+  header {
+    grid-area: header;
+    margin-left: 45%;
+  }
+  
+  .navBar {
+    grid-area: navBar;
+    background-color: yellow;
+    align-items: center;
+  }
+  
+  .navBar ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    font-weight: bold;
+  }
+
+  .mouseon{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .mouseon:hover{
+    background-color: white;
+  }
+
+  .mouseon:not(:hover){
+    font-weight: lighter;
+  }
+  #content1 {
+    grid-area: content1;
+    border-style: solid;
+    border-color: blueviolet;
+  }
+  
+  #content2 {
+    grid-area: content2;
+    background-color: chartreuse;
+    border-style: solid;
+    border-color: blueviolet;
+  }
+  
+  #content3 {
+    grid-area: content3;
+    background-color: aquamarine;
+    border-style: solid;
+    border-color: blueviolet;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: chocolate;
+  }
+
+  #bild1{
+    width: auto;
+  }
