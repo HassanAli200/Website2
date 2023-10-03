@@ -2,16 +2,9 @@ html{
     height: 100%;
 }
 
-header{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size:larger;
-    font-weight: bold;
-}
-
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 body {
     height: 100%;
     background-color: beige;
@@ -54,9 +47,6 @@ body {
     background-color: white;
   }
 
-  .mouseon:not(:hover){
-    font-weight: lighter;
-  }
   #content1 {
     grid-area: content1;
     border-style: solid;
@@ -80,8 +70,4 @@ body {
   footer {
     grid-area: footer;
     background-color: chocolate;
-  }
-
-  #bild1{
-    width: auto;
   }
