@@ -13,7 +13,7 @@ p{
 
 body {
   height: 100%;
-  background-color: #f0f0f0; 
+  background-image: url(photo-1503614472-8c93d56e92ce.jpg); 
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   display: grid;
   grid-template-rows: min-content min-content auto min-content;
@@ -34,8 +34,7 @@ header {
 }
 
 .navBar {
-  grid-area: navBar;
-  background-color: #0077b6; 
+  grid-area: navBar; 
   align-items: center;
 }
 
@@ -56,24 +55,22 @@ header {
 }
 
 .mouseon:hover {
-  background-color: #ff6b6b; 
-  color: #333; 
+  background-color: forestgreen;  
   font-weight: bold;
 }
 
 #content1 {
-  grid-area: content1;
-  background-color: #f9a826; 
-  border: 2px solid #fff; 
+  grid-area: content1; 
+  border: 2px solid white; 
   padding: 20px;
   border-radius: 10px;
   color: #333; 
+  
 }
 
 #content2 {
-  grid-area: content2;
-  background-color: #90be6d; 
-  border: 2px solid #fff; 
+  grid-area: content2; 
+  border: 2px solid white; 
   padding: 20px;
   border-radius: 10px;
   color: #333; 
@@ -81,8 +78,7 @@ header {
 
 #content3 {
   grid-area: content3;
-  background-color: #00a896; 
-  border: 2px solid #fff; 
+  border: 2px solid white; 
   padding: 20px;
   border-radius: 10px;
   color: #333; 
@@ -90,12 +86,22 @@ header {
 
 footer {
   grid-area: footer;
-  background-color: #d00000;
-  color: #fff; 
+  background-color: forestgreen;
   padding: 10px;
   text-align: center;
 }
 
-#bild1{
-  width: auto;
+.icons{
+  font-size: 24px;
 }
+
+.icons i{
+  color: white;
+margin: 156px;  
+transition: all 0.8s ease-in-out;
+}
+
+.icons i:hover{
+  color: #000;
+}
+
