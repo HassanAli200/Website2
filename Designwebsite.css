@@ -2,7 +2,16 @@ html {
   height: 100%;
 }
 
-p{
+h3 {
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+  background-color: #fff;
+}
+
+p {
   border-radius: 25px;
   background: forestgreen;
   padding: 20px;
@@ -14,7 +23,7 @@ p{
 
 body {
   height: 100%;
-  background-image: url(photo-1503614472-8c93d56e92ce.jpg); 
+  background-image: url(photo-1503614472-8c93d56e92ce.jpg);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   display: grid;
   grid-template-rows: min-content min-content auto min-content;
@@ -28,14 +37,14 @@ body {
 
 header {
   grid-area: header;
-  margin-left: 44%;
-  color: #333; 
+  margin-left: 44.5%;
+  color: #333;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .navBar {
-  grid-area: navBar; 
+  grid-area: navBar;
   align-items: center;
 }
 
@@ -49,39 +58,39 @@ header {
 .mouseon {
   font-size: 18px;
   text-decoration: none;
-  color: #fff; 
+  color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   transition: background-color 0.9s ease-in-out;
 }
 
 .mouseon:hover {
-  background-color: forestgreen;  
+  background-color: forestgreen;
   font-weight: bold;
 }
 
 #content1 {
-  grid-area: content1; 
-  border: 2px solid white; 
+  grid-area: content1;
+  border: 2px solid hidden;
   padding: 20px;
   border-radius: 10px;
-  color: #333; 
-  }
+  color: #333;
+}
 
 #content2 {
-  grid-area: content2; 
-  border: 2px solid white; 
+  grid-area: content2;
+  border: 2px solid hidden;
   padding: 20px;
   border-radius: 10px;
-  color: #333; 
+  color: #333;
 }
 
 #content3 {
   grid-area: content3;
-  border: 2px solid white; 
+  border: 2px solid hidden;
   padding: 20px;
   border-radius: 10px;
-  color: #333; 
+  color: #333;
 }
 
 footer {
@@ -89,19 +98,20 @@ footer {
   background-color: forestgreen;
   padding: 10px;
   text-align: center;
+  height: 6vh;
 }
 
-.icons{
-  font-size: 24px;
+.icons {
+  font-size: 22px;
 }
 
-.icons i{
+.icons i {
   color: white;
-margin: 156px;  
-transition: all 0.6s ease-in-out;
+  margin: 156px;
+  transition: all 0.6s ease-in-out;
 }
 
-.icons i:hover{
+.icons i:hover {
   color: #000;
   font-size: 36px;
 }
