@@ -4,11 +4,12 @@ html {
 
 p{
   border-radius: 25px;
-  background: #73AD21;
+  background: forestgreen;
   padding: 20px;
   width: 200px;
   height: auto;
   margin-left: 11px;
+  color: #fff;
 }
 
 body {
@@ -65,8 +66,7 @@ header {
   padding: 20px;
   border-radius: 10px;
   color: #333; 
-  
-}
+  }
 
 #content2 {
   grid-area: content2; 
@@ -98,10 +98,11 @@ footer {
 .icons i{
   color: white;
 margin: 156px;  
-transition: all 0.8s ease-in-out;
+transition: all 0.6s ease-in-out;
 }
 
 .icons i:hover{
   color: #000;
+  font-size: 36px;
 }
 
