@@ -196,7 +196,6 @@ footer {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas:
         "header header header"
-        "navBar navBar navBar"
         ". content1 ."
         ". content2 ."
         ". content3 ."
