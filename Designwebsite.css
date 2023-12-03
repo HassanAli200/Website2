@@ -1,5 +1,7 @@
 html {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 h3 {
@@ -24,6 +26,7 @@ p {
 body {
   height: 100%;
   background-image: url(photo-1503614472-8c93d56e92ce.jpg);
+  min-width: 300px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   display: grid;
   grid-template-rows: min-content min-content auto min-content;
@@ -121,7 +124,7 @@ footer {
   header {
     padding: 15px 3%;
     transition: 0.2s;
-    margin-left: 39%;
+    margin-left: 20%; 
     color: white;
   }
 
@@ -133,8 +136,8 @@ footer {
     border-radius: 20px;
     background: lightseagreen;
     padding: 15px;
-    width: 250px;
-    height: auto;
+    width: 100%; 
+    max-width: 250px; 
     color: #fff;
     font-weight: bold;
   }
@@ -157,100 +160,134 @@ footer {
     padding: 0 3%;
     transition: 0.2s;
   }
+}
 
-  @media (max-width: 550px) {
-
-    header {
-      padding: 10px 3%;
-      transition: 0.4s;
-      margin-left: 32%;
-      color: white;
-    }
-
-    h3 {
-      font-size: smaller;
-      padding: 10px;
-      margin-left: auto;
-
-    }
-
-    .navBar ul {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      margin-right: 5%;
-    }
-
-    p {
-      margin-left: auto;
-      background-color: orange;
-      border-radius: 13px;
-      width: 230px;
-      height: auto;
-
-    }
-
-    body {
-      display: grid;
-      grid-template-rows: min-content min-content auto min-content;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas:
-        "header header header"
-        ". content1 ."
-        ". content2 ."
-        ". content3 ."
-        "footer footer footer";
-    }
-
-    .mouseon:hover {
-      background-color: orange;
-    }
-
-    footer {
-      grid-area: footer;
-      background-color: orange;
-      padding: 8px;
-      text-align: center;
-      height: 6vh;
-
-
-    }
+@media (max-width: 550px) {
+  header {
+    padding: 10px 3%;
+    transition: 0.4s;
+    margin-left: 15%; 
+    color: white;
   }
 
-  @media (max-width: 450px) {
-    header {
-      padding: 8px 2%;
-      transition: 0.4s;
-      margin-left: 29%;
-      color: white;
-    }
+  h3 {
+    font-size: smaller;
+    padding: 10px;
+    margin-left: auto;
+  }
 
-    h3 {
-      padding: 5px;
+  .navBar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 5%;
+  }
 
+  p {
+    margin-left: auto;
+    background-color: orange;
+    border-radius: 13px;
+    width: 100%; 
+    max-width: 230px; 
+    height: auto;
+  }
 
-    }
+  body {
+    display: grid;
+    grid-template-rows: min-content min-content auto min-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "navBar navBar navBar"
+      "header header header"
+      ". content1 ."
+      ". content2 ."
+      ". content3 ."
+      "footer footer footer";
+  }
 
-    p {
-      margin-left: auto;
-      background-color: peru;
-      border-radius: 13px;
-      width: 230px;
-      height: auto;
+  .mouseon:hover {
+    background-color: orange;
+  }
 
-    }
-
-    .mouseon:hover {
-      background-color: peru;
-    }
-
-    footer {
-      grid-area: footer;
-      background-color: peru;
-      padding: 4px;
-      text-align: center;
-      height: 6vh;
-
-    }
+  footer {
+    grid-area: footer;
+    background-color: orange;
+    padding: 8px;
+    text-align: center;
+    height: 6vh;
   }
 }
+
+@media (max-width: 450px) {
+  header {
+    padding: 8px 2%;
+    transition: 0.4s;
+    margin-left: 29%;
+    color: white;
+  }
+
+  h3 {
+    padding: 5px;
+    text-align: center;
+  }
+
+  body {
+    display: grid;
+    grid-template-rows: min-content min-content auto min-content;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "navBar"
+      "header"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+  }
+
+  #content1 {
+    grid-area: content1;
+    border: 2px solid hidden;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+  }
+
+  #content2 {
+    grid-area: content2;
+    border: 2px solid hidden;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+  }
+
+  #content3 {
+    grid-area: content3;
+    border: 2px solid hidden;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+  }
+
+  p {
+    margin-left: auto;
+    background-color: peru;
+    border-radius: 13px;
+    width: 230px;
+    height: auto;
+    text-align: left;
+  }
+
+  .mouseon:hover {
+    background-color: peru;
+  }
+
+  footer {
+    grid-area: footer;
+    background-color: peru;
+    padding: 4px;
+    text-align: center;
+    height: 6vh;
+  }
+}
+
+
